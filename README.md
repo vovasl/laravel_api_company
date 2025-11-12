@@ -23,7 +23,7 @@ Built with Laravel and Docker, it's easy to deploy and extend for real-world bus
    `cd laravel_api_company`
 
 
-2. Configure environment variables. Rename the file: api/.env.example → api/.env
+2. Configure environment variables. Rename the file: src/.env.example → src/.env
 
 
 3. Start Docker containers
@@ -34,8 +34,12 @@ Built with Laravel and Docker, it's easy to deploy and extend for real-world bus
    Enter the Laravel container:
    `docker exec -it laravel_app bash`
 
-   Then run:
-   `composer install` and
+   Then run: 
+
+    `composer install`
+
+    `php artisan key:generate`
+
    `php artisan migrate --seed`
 
 
